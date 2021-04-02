@@ -1,0 +1,794 @@
+ 1012  wget http://ces-cl.edu.br/ces.tar.gz
+ 1013  cd /var/www/html/AstStatsCDR/
+ 1014  ls
+ 1015  cd lib/
+ 1016  ls
+ 1017  vim defines.php 
+ 1116  apt-get install php5 libapache2-mod-php5
+ 1117  vim info.php
+ 1118  apt-cache search php5
+ 1119  apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl php-apc
+ 1120  /etc/init.d/apache2 restart
+ 1121  /etc/init.d/apache2 stop
+ 1122  /etc/init.d/apache2 start
+ 1123  vim /etc/php5/apache2/php.ini 
+# cd /etc/php5/apache2
+# cp -a php.ini php.ini.old
+[~] # vim php.ini
+short_open_tag = On (linha 226)
+max_execution_time = 120 (linha 444)
+memory_limit = 512M (linha 465)
+error_reporting = E_COMPILE_ERROR (linha 521)
+register_globals = On (linha 703)
+upload_max_filesize = 12M (linha 891
+
+ 1154  /etc/init.d/apache2 stop
+ 1155  /etc/init.d/apache2 start
+ 1156  cd ..
+ 1157  ll
+ 1158  vim apache2.conf 
+ 1159  vim /etc/hosts
+ 1160  /etc/init.d/apache2 stop
+ 1161  /etc/init.d/apache2 start
+ 1162  clear
+ 1163  cd /var/www/
+ 1164  rasterisk -vvvvgci
+ 1165  cd AstStatsCDR/
+ 1166  ls
+ 1167  cd lib/
+ 1168  ls
+ 1169  vim defines.php 
+ 1170  /etc/init.d/apache2 stop
+ 1171  /etc/init.d/apache2 start
+ 1172  exit
+ 1173  cd /
+ 1174  clear
+ 1175  ll
+ 1176  rasterisk -vvvvgci
+ 1177  exit
+ 1178  cd /etc/asterisk/
+ 1179  clear
+ 1180  ll
+ 1181  vim extensions.conf
+ 1182  vim pbx/globals.conf 
+ 1183  vim extensions.conf
+ 1184  rasterisk -vvvvgci
+ 1185  exit
+ 1186  rasterisk -vvvvgci
+ 1187  tshark -R sip -i any host 129.13.85.210
+ 1188  cd /etc/asterisk/
+ 1189  vim sip.conf
+ 1190  exit
+ 1191  rasterisk -vvvvgci
+ 1192  arp -a
+ 1193  rasterisk -vvvvgci
+ 1194  arp -a
+ 1195  rasterisk -vvvvgci
+ 1196  arp -a
+ 1197  iptables -t nat -L PREROUTING -nv
+ 1198  rasterisk -vvvvgci
+ 1199  ping 129.13.85.210
+ 1200  rasterisk -vvvvgci
+ 1201  ping 129.13.85.210
+ 1202  rasterisk -vvvvgci
+ 1203  ifconfig
+ 1204  rasterisk -vvvvgci
+ 1205  vim /etc/asterisk/sip.conf 
+ 1206  rasterisk -vvvvgci
+ 1207  ping 129.13.85.210
+ 1208  rasterisk -vvvvgci
+ 1209  vim /etc/asteri
+ 1210  vim /etc/asterisk/pbx/globals.conf
+ 1211  vim /etc/asterisk/sip.conf 
+ 1212  rasterisk -vvvvgci
+ 1213  vim /etc/asterisk/sip.conf 
+ 1214  rasterisk -vvvvgci
+ 1215  vim /etc/asterisk/sip.conf 
+ 1216  rasterisk -vvvvgci
+ 1217  rasterisk -vvvvgci
+ 1218  vim /etc/asterisk/sip.conf 
+ 1219  rasterisk -vvvvgci
+ 1220  vim /etc/asterisk/sip.conf 
+ 1221  exit
+ 1222  /etc/init.d/asterisk stop
+ 1223  /etc/init.d/asterisk start
+ 1224  rasterisk -vvvvgci
+ 1225  cd /etc/asterisk/
+ 1226  vim sip.conf 
+ 1227  rasterisk -vvvvgci
+ 1228  vim sip.conf
+ 1229  rasterisk -vvvvgci
+ 1230  vim sip.conf
+ 1231  /etc/init.d/asterisk stop
+ 1232  /etc/init.d/asterisk start
+ 1233  rasterisk -vvvvgci
+ 1234  cd pbx
+ 1235  ll
+ 1236  vim ivroptions.conf 
+ 1237  vim ivrtime
+ 1238  vim ivrtime.conf 
+ 1239  vim ivrinput.conf 
+ 1240  rasterisk -vvvvgci
+ 1241  exit
+ 1242  cd /etc/asterisk/
+ 1243  vim extensions.conf
+ 1244  rasterisk -vvvvgci
+ 1245  vim extensions.conf
+ 1246  rm -rf .extensions.conf.swp 
+ 1247  vim extensions.conf
+ 1248  exit
+ 1249  vim /etc/asterisk/extensions.conf
+ 1250  exit
+ 1251  cd /etc/asterisk/
+ 1252  ls
+ 1253  cp -a extensions.conf extensions.conf.dell23Out13
+ 1254  vim extensions.conf
+ 1255  rasterisk -vvvvgci
+ 1256  vim extensions.conf
+ 1257  rasterisk -vvvvgci
+ 1258  exit
+ 1259  cd /var/spool/asterisk/
+ 1260  ll
+ 1261  cd monitor
+ 1262  ll
+ 1263  df -hT
+ 1264  cd /var/spool/asterisk/
+ 1265  ll
+ 1266  cp -a monitor monitor23Out13
+ 1267  ll
+ 1268  mv monitor_old monitor28Aug13
+ 1269  ll
+ 1270  clear
+ 1271  lll
+ 1272  ll
+ 1273  cd ..
+ 1274  clear
+ 1275  cd /etc/asterisk/
+ 1276  rasterisk -vvvvgci
+ 1277  cd pbx
+ 1278  ll
+ 1279  vim interconexao.conf
+ 1280  vim ../extensions.conf
+ 1281  vim interconexao.conf
+ 1282  vim ../extensions.conf
+ 1283  cd /var/spool/
+ 1284  ll
+ 1285  cd asterisk/
+ 1286  ll
+ 1287  cd monitor28Aug13/
+ 1288  ll
+ 1289  cd ..
+ 1290  cd monitor23Out13/
+ 1291  ll
+ 1292  rm -rf lost+found/
+ 1293  ll
+ 1294  clear
+ 1295  rasterisk -vvvvgci
+ 1296  vim /etc/asterisk/features.conf 
+ 1297  rasterisk -vvvvgci
+ 1298  vim /etc/asterisk/features.conf 
+ 1299  rasterisk -vvvvgci
+ 1300  exit
+ 1301  clear
+ 1302  cd /etc/asterisk/
+ 1303  ll
+ 1304  vim extensions.conf
+ 1305  clear
+ 1306  ll
+ 1307  rasterisk -vvvvgci
+ 1308  exit
+ 1309  rasterisk -vvvvgci
+ 1310  exit
+ 1311  rasterisk -vvvvgci
+ 1312  ping 129.13.85.210
+ 1313  rasterisk -vvvvgci
+ 1314  /etc/init.d/asterisk stop
+ 1315  /etc/init.d/asterisk start
+ 1316  rasterisk -vvvvgci
+ 1317  cd /etc/asterisk/
+ 1318  vim sip.conf 
+ 1319  rasterisk -vvvvgci
+ 1320  vim sip.conf 
+ 1321  clear
+ 1322  rasterisk -vvvvgci
+ 1323  tshrk -R sip -i any
+ 1324  tshark -R sip -i any
+ 1325  tshark -R sip -i any host 129.13.85.210
+ 1326  rasterisk -vvvvgci
+ 1327  vim sip.conf
+ 1328  tshark -R sip -i any host 129.13.85.210
+ 1329  vim sip.conf
+ 1330  rasterisk -vvvvgci
+ 1331  clear
+ 1332  tshark -R sip -i any host 129.13.85.210
+ 1333  rasterisk -vvvvgci
+ 1334  vim sip.conf 
+ 1335  rasterisk -vvvvgci
+ 1336  tshark -R sip -i any host 129.13.85.210
+ 1337  ll
+ 1338  iptables -L
+ 1339  iptables -F
+ 1340  tshark -R sip -i any host 129.13.85.210
+ 1341  ping 129.13.85.210
+ 1342  ping 129.13.85.210arp -a
+ 1343  arp -a
+ 1344  ping 129.13.85.210
+ 1345  arp -a
+ 1346  clear
+ 1347  ping 129.13.85.210
+ 1348  arp -a
+ 1349  vim sip.conf 
+ 1350  rasterik -vvvvgci
+ 1351  rastersik -vvvvgci
+ 1352  rasterisk -vvvvgci
+ 1353  vim sip.conf 
+ 1354  rasterisk -vvvvgci
+ 1355  vim sip.conf 
+ 1356  rasterisk -vvvvgci
+ 1357  /etc/init.d/asterisk stop
+ 1358  /etc/init.d/asterisk start
+ 1359  rasterisk -vvvvgci
+ 1360  tshark -R sip -i any host 129.13.85.210
+ 1361  rasterisk -vvvvcgi
+ 1362  clear
+ 1363  lll
+ 1364  ll
+ 1365  rasterisk -vvvvgci
+ 1366  df -hT
+ 1367  cd /var/spool/
+ 1368  ll
+ 1369  cd asterisk/
+ 1370  ll
+ 1371  cd ..
+ 1372  ll
+ 1373  tshark -R sip -y any
+ 1374  tshark -R sip -i any
+ 1375  /etc/init.d/asterisk stop
+ 1376  /etc/init.d/asterisk start
+ 1377  rasterisk -vvvvgci
+ 1378  /etc/init.d/asterisk start
+ 1379  rasterisk -vvvvgci
+ 1380  clear
+ 1381  exit
+ 1382  rasterisk -vvvvgci
+ 1383  vim /etc/asterisk/extensions.conf
+ 1384  exit
+ 1385  vim /etc/asterisk/extensions.conf
+ 1386  vim /etc/asterisk/pbx/globals.conf 
+ 1387  vim /etc/asterisk/extensions.conf
+ 1388  rasterisk -vvvvgci
+ 1389  exit
+ 1390  vim /etc/asterisk/extensions.conf
+ 1391  rasterisk -vvvvgci
+ 1392  exit
+ 1393  rasterisk -vvvvgci
+ 1394  vim /etc/asterisk/extensions.
+ 1395  vim /etc/asterisk/extensions.conf
+ 1396  arp -a
+ 1397  iptables -t nat -L PREROUTING -nv
+ 1398  exit
+ 1399  clear
+ 1400  ll
+ 1401  cd /
+ 1402  clear
+ 1403  ll
+ 1404  rasterisk -vvvvgci
+ 1405  cd /etc/asterisk/
+ 1406  ll
+ 1407  vim features.conf 
+ 1408  vim /etc/asterisk/extensions.conf
+ 1409  rm .extensions.conf.swp 
+ 1410  vim extensions.conf
+ 1411  rasterisk -vvvvgci
+ 1412  clear
+ 1413  ll
+ 1414  vim extensions.conf
+ 1415  /etc/init.d/asterisk stop
+ 1416  /etc/init.d/asterisk start
+ 1417  rasterisk -vvvvgci
+ 1418  /etc/init.d/asterisk start
+ 1419  rasterisk -vvvvgci
+ 1420  exit
+ 1421  ok
+ 1422  vc esta ai
+ 1423  blz
+ 1424  rasterisk -vvvvgci
+ 1425  vim extensions.conf
+ 1426  rasterisk -vvvvgci
+ 1427  cd pbx/
+ 1428  ll
+ 1429  rm .ivrinput.conf.swp 
+ 1430  ll
+ 1431  vim ivrinput.conf 
+ 1432  ll
+ 1433  vim ivrtime.conf 
+ 1434  rasterisk -vvvvgci
+ 1435  vim ../features.conf 
+ 1436  ll
+ 1437  vim ivrinput.conf 
+ 1438  ll
+ 1439  rm ivrexten.conf 
+ 1440  rm .ivrexten.conf.swp 
+ 1441  l
+ 1442  ll
+ 1443  clear
+ 1444  llra
+ 1445  clear
+ 1446  vim ivrtime.conf 
+ 1447  vim ivrinput.conf 
+ 1448  rasterisk -vvvvgci
+ 1449  vim ivrinput.conf 
+ 1450  rasterisk -vvvvgci
+ 1451  vim ivrinput.conf 
+ 1452  rasterisk -vvvvgci
+ 1453  vim ivrinput.conf 
+ 1454  rasterisk -vvvvgci
+ 1455  ll
+ 1456  vim ivrinput.conf 
+ 1457  cp -a ivrinput.conf /root/ivrinput.conf.dell
+ 1458  ls /root/
+ 1459  ll
+ 1460  vim ivrinput.conf 
+ 1461  vim ivrtime.conf 
+ 1462  ll
+ 1463  vim ivroptions.conf 
+ 1464  rm ivroptions.conf 
+ 1465  ll
+ 1466  vim ivrinput.conf 
+ 1467  vim globals.conf 
+ 1468  clear
+ 1469  ll
+ 1470  vim ivrinput.conf 
+ 1471  rasterisk -vvvvgci
+ 1472  reload ivrinput.conf 
+ 1473  rasterisk -vvvvgci
+ 1474  /etc/init.d/asterisk stop
+ 1475  /etc/init.d/asterisk start
+ 1476  /etc/init.d/asterisk stop
+ 1477  reboot
+ 1478  clear
+ 1479  ll
+ 1480  cd /etc/asterisk/
+ 1481  ll
+ 1482  vim features.conf 
+ 1483  rasterisk -vvvvgci
+ 1484  cd pbx/
+ 1485  ll
+ 1486  vim ivrinput.conf 
+ 1487  vim /etc/asterisk/extensions.conf
+ 1488  cd /etc/asterisk/
+ 1489  ll
+ 1490  cd pbx/
+ 1491  ll
+ 1492  vim recursos.conf 
+ 1493  vim ivrexten.conf 
+ 1494  vim ivrinput.conf 
+ 1495  vim ivrexten.conf 
+ 1496  vim ivrinput.conf 
+ 1497  clear
+ 1498  cd /etc/asterisk/
+ 1499  ll
+ 1500  vim sip.conf 
+ 1501  rasterisk -vvvvgci
+ 1502  screen -X rnp
+ 1503  screen -S rnp
+ 1504  vim /etc/asterisk/pbx/ivrinput.conf 
+ 1505  rasterisk -vvvvgci
+ 1506  vim /etc/asterisk/pbx/ivrinput.conf 
+ 1507  rasterisk -vvvvgci
+ 1508  vim /etc/asterisk/sip.conf
+ 1509  rasterisk -vvvvgci
+ 1510  vim /etc/asterisk/sip.conf
+ 1511  rasterisk -vvvvgci
+ 1512  screen -x rnp
+ 1513  vim /etc/asterisk/pbx/ivrexten.conf 
+ 1514  vim /etc/asterisk/sip.conf 
+ 1515  rasterisk -x "reaload"
+ 1516  rasterisk -vvvgci
+ 1517  screen -x rnp
+ 1518  rasterisk -vvvvgci
+ 1519  clear
+ 1520  cd /etc/asterisk/
+ 1521  ll
+ 1522  vim extensions.conf
+ 1523  rasterisk -vvvvgci
+ 1524  ll
+ 1525  ls
+ 1526  rasterisk -vvvvgci
+ 1527  vim extensions.conf
+ 1528  cd pbx
+ 1529  vim sac.conf 
+ 1530  rm sac.conf 
+ 1531  cd ..
+ 1532  vim extensions.conf
+ 1533  rasterisk -vvvvgci
+ 1534  vim sip.conf
+ 1535  rasterisk -vvvvgci
+ 1536  vim pbx/ivrinput.conf 
+ 1537  vim features.conf 
+ 1538  rasterisk -vvvvgci
+ 1539  vim sip.conf 
+ 1540  vim extensions.conf
+ 1541  cd pbx/
+ 1542  vim khomp_blf.conf
+ 1543  vim khomp_pkp.conf
+ 1544  clear
+ 1545  cd ..
+ 1546  ll
+ 1547  vim queues.conf 
+ 1548  clear
+ 1549  exit
+ 1550  screen -S rnp
+ 1551  exit
+ 1552  clear
+ 1553  ll
+ 1554  cd /etc/asterisk/pbx/
+ 1555  ll
+ 1556  vim recursos.conf 
+ 1557  rasterisk -vvvvgci
+ 1558  exit
+ 1559  cd /etc/asterisk/
+ 1560  ll
+ 1561  vim sip.conf 
+ 1562  clear
+ 1563  rasterisk -vvvvgci
+ 1564  vim sip.conf 
+ 1565  rasterisk -vvvvgci
+ 1566  vim extensions.conf
+ 1567  rasterisk -vvvvgci
+ 1568  exit
+ 1569  service asterisk status 
+ 1570  rasterisk -vvvgci
+ 1571  cd /etc/asterisk/
+ 1572  ll
+ 1573  rasterisk -vvvgci
+ 1574  vim extensions.conf
+ 1575  rasterisk -vvvgci
+ 1576  vim sip.conf 
+ 1577  rasterisk -vvvgci
+ 1578  vim sip.conf 
+ 1579  rasterisk -vvvgci
+ 1580  ping 129.13.85.248
+ 1581  rasterisk -vvvgci
+ 1582  service asterisk stop 
+ 1583  service asterisk status 
+ 1584  rasterisk -vvvgci
+ 1585  service asterisk status 
+ 1586  service asterisk start 
+ 1587  service asterisk status 
+ 1588  rasterisk -vvvgci
+ 1589  exit
+ 1590  rasterisk -x "sip show peers"
+ 1591  ping 129.13.85.214
+ 1592  arp -a
+ 1593  pin 129.13.85.248
+ 1594  ping 129.13.85.248
+ 1595  if config
+ 1596  ifconfig
+ 1597  ifconfig -a
+ 1598  cat /etc/init.d/networking 
+ 1599  vim /etc/network/interfaces 
+ 1600  ping 129.13.85.210
+ 1601  rasterisk -vvvvgci
+ 1602  exit
+ 1603  clear
+ 1604  tshark -R sip -i any host 129.13.85.248
+ 1605  exit
+ 1606  rasterisk -vvvvgci
+ 1607  cd /etc/asterisk/
+ 1608  vim sip.conf 
+ 1609  rasterisk -vvvvgci
+ 1610  exit
+ 1611  rasterisk -x "sip show peers"
+ 1612  exit
+ 1613  rasterisk -vvvvgci
+ 1614  cd /etc/asterisk/
+ 1615  ll
+ 1616  vim sip.conf 
+ 1617  rasterisk -vvvvgci
+ 1618  exit
+ 1619  clear
+ 1620  rasterisk -vvvvgci
+ 1621  clear
+ 1622  cd /etc/asterisk/
+ 1623  ll
+ 1624  rm .sip.conf.swp 
+ 1625  ll
+ 1626  vim iax.conf 
+ 1627  rasterisk -vvvvgci
+ 1628  clear
+ 1629  ll
+ 1630  vim sip.conf
+ 1631  rasterisk -vvvvgci
+ 1632  vim iax.conf 
+ 1633  rasterisk -vvvvgci
+ 1634  vim sip.conf 
+ 1635  rasterisk -vvvvgci
+ 1636  clear
+ 1637  ll
+ 1638  vim sip.conf
+ 1639  rasterisk -vvvvgci
+ 1640  vim iax.conf 
+ 1641  clear
+ 1642  rasterisk -vvvvgci
+ 1643  vim features.conf 
+ 1644  rasterisk -vvvvgci
+ 1645  vim extensions.conf
+ 1646  rasterisk -vvvvgci
+ 1647  clear
+ 1648  ll
+ 1649  cd pbx/
+ 1650  vim globals.conf 
+ 1651  vim ivrinput.conf 
+ 1652  rasterisk -vvvvgci
+ 1653  vim globals.conf 
+ 1654  vim ivrinput.conf 
+ 1655  vim globals.conf 
+ 1656  vim ivrinput.conf 
+ 1657  rasterisk -vvvvgci
+ 1658  vim ivrtime.conf 
+ 1659  clear
+ 1660  ll
+ 1661  rasterisk -vvvvgci
+ 1662  vim ivrtime.conf 
+ 1663  rasterisk -vvvvgci
+ 1664  clear
+ 1665  vim ivrtime.conf 
+ 1666  rasterisk -vvvvgci
+ 1667  vim ivrtime.conf 
+ 1668  vim ivrinput.conf 
+ 1669  cd ..
+ 1670  vim extensions.conf
+ 1671  rasterisk -vvvvgci
+ 1672  vim extensions.conf
+ 1673  rasterisk -vvvvgci
+ 1674  vim extensions.conf
+ 1675  rasterisk -vvvvgci
+ 1676  vim extensions.conf
+ 1677  vim sip.conf
+ 1678  cd pbx/
+ 1679  ll
+ 1680  vim macros.conf 
+ 1681  cd ..
+ 1682  vim extensions.conf
+ 1683  rasterisk -vvvvgci
+ 1684  vim extensions.conf
+ 1685  vim pbx/macros.conf 
+ 1686  rasterisk -vvvvgci
+ 1687  vim extensions.conf
+ 1688  rasterisk -vvvvgci
+ 1689  vim pbx/macros.conf 
+ 1690  clear
+ 1691  rasterisk -vvvvgci
+ 1692  vim extensions.conf
+ 1693  rasterisk -vvvvgci
+ 1694  clear
+ 1695  ll
+ 1696  vim extensions.conf
+ 1697  rasterisk -vvvvgci
+ 1698  vim extensions.conf
+ 1699  vim pbx/globals.conf 
+ 1700  vim pbx/macros.conf 
+ 1701  vim extensions.conf
+ 1702  rasterisk -vvvvgci
+ 1703  vim pbx/macros.conf 
+ 1704  clear
+ 1705  vim extensions.conf
+ 1706  rasterisk -vvvvgci
+ 1707  vim pbx/ivrtime.conf 
+ 1708  rasterisk -vvvvgci
+ 1709  vim pbx/ivrtime.conf 
+ 1710  rasterisk -vvvvgci
+ 1711  vim pbx/macros.conf 
+ 1712  rasterisk -vvvvgci
+ 1713  vim pbx/ivrinput.conf 
+ 1714  rasterisk -vvvvgci
+ 1715  vim pbx/macros.conf 
+ 1716  clear
+ 1717  rasterisk -vvvvgci
+ 1718  vim pbx/macros.conf 
+ 1719  clear
+ 1720  rasterisk -vvvvvgci
+ 1721  clear
+ 1722  ll
+ 1723  vim pbx/macros.conf 
+ 1724  clear
+ 1725  rasterisk -vvvvgci
+ 1726  vim pbx/macros.conf 
+ 1727  rasterisk -vvvvgci
+ 1728  vim extensions.conf
+ 1729  rasterisk -vvvvgci
+ 1730  clear
+ 1731  vim extensions.conf
+ 1732  rasterisk -vvvvgci
+ 1733  vim extensions.conf
+ 1734  rasterisk -vvvvgci
+ 1735  vim sip.conf 
+ 1736  rm .sip.conf.swp 
+ 1737  vim sip.conf 
+ 1738  vim pbx/khomp_blf.conf 
+ 1739  clear
+ 1740  rasterisk -vvvvgci
+ 1741  vim extensions.conf
+ 1742  rasterisk -vvvvgci
+ 1743  vim extensions.conf
+ 1744  rasterisk -vvvvgci
+ 1745  /etc/init.d/asterisk start
+ 1746  rasterisk -vvvvgci
+ 1747  vim pbx/ivrtime.conf 
+ 1748  vim pbx/ivrinput.conf 
+ 1749  cd pbx/
+ 1750  ll
+ 1751  rasterisk -vvvvgci
+ 1752  ping 129.13.85.210
+ 1753  tshark -R sip -i any host 129.13.85.210
+ 1754  exit
+ 1755  cd /etc/asterisk/
+ 1756  vim extensions.conf
+ 1757  exit
+ 1758  cd /etc/asterisk/
+ 1759  vim extensions.conf
+ 1760  rasterisk -vvvvgci
+ 1761  vim extensions.con
+ 1762  vim extensions.conf
+ 1763  rasterisk -vvvvgci
+ 1764  exit
+ 1765  rasterisk -vvvvgci
+ 1766  exit
+ 1767  cd /etc/asterisk/
+ 1768  vim extensions.conf
+ 1769  vim pbx/macros.conf 
+ 1770  exit
+ 1771  clear
+ 1772  ll
+ 1773  cd /etc/asterisk/
+ 1774  ll
+ 1775  cd pbx/
+ 1776  ll
+ 1777  cd ..
+ 1778  clear
+ 1779  vim extensions.conf
+ 1780  rasterisk -vvvvgci
+ 1781  vim sip.conf
+ 1782  rasterisk -vvvvgci
+ 1783  vim sip.conf
+ 1784  clear
+ 1785  ll
+ 1786  clear
+ 1787  ll
+ 1788  rasterisk -vvvvgci
+ 1789  clear
+ 1790  vim logger.conf 
+ 1791  rasterisk -vvvvgci
+ 1792  cd pbx
+ 1793  ll
+ 1794  vim ivrinput.conf 
+ 1795  vim macros.conf 
+ 1796  clear
+ 1797  reload
+ 1798  clear
+ 1799  rasterisk -vvvvgci
+ 1800  exit
+ 1801  clear
+ 1802  ll
+ 1803  cd /etc/asterisk/
+ 1804  vim sip.conf 
+ 1805  rasterisk -vvvvgci
+ 1806  clear
+ 1807  ll
+ 1808  exit
+ 1809  ifconfig -a 
+ 1810  route add -host 187.73.70.2 gw 129.13.85.251 
+ 1811  mtr 187.73.70.2 
+ 1812  vi /etc/network/interfaces 
+ 1813  mtr 187.73.70.2 
+ 1814  cd /etc/asterisk/
+ 1815  vim iax.conf 
+ 1816  rasterisk -vvvvgci
+ 1817  cd /etc/asterisk/
+ 1818  rasterisk -vvvvgci
+ 1819  vim iax.conf 
+ 1820  rasterisk -vvvvgci
+ 1821  exit
+ 1822  cd /etc/asterisk/
+ 1823  ifcondig
+ 1824  ifconfig
+ 1825  ping 129.13.85.201
+ 1826  rasterisk -vvvvgci
+ 1827  exit
+ 1828  rasterisk -vvvvgci
+ 1829  ping 129.13.85.201
+ 1830  rasterisk -vvvvgci
+ 1831  ping 129.13.85.201
+ 1832  rasterisk -vvvvgci
+ 1833  exit
+ 1834  cd /etc/asterisk/
+ 1835  ll
+ 1836  vim iax.conf 
+ 1837  rasterisk -vvvvgci
+ 1838  vim iax.conf 
+ 1839  rasterisk -vvvvgci
+ 1840  vim iax.conf 
+ 1841  rasterisk -vvvvgci
+ 1842  vim sip.conf
+ 1843  vim iax.conf 
+ 1844  rasterisk -vvvvgci
+ 1845  vim pbx/globals.conf 
+ 1846  rasterisk -vvvvgci
+ 1847  4
+ 1848  ž
+ 1849  ping 129.13.85.201
+ 1850  clear
+ 1851  exit
+ 1852  clear
+ 1853  ll
+ 1854  cd /var/spool/asterisk/monitor
+ 1855  ll
+ 1856  cd /etc/asterisk/pbx/
+ 1857  ll
+ 1858  vim globals.conf 
+ 1859  rasterisk -vvvvgci
+ 1860  clear
+ 1861  exit
+ 1862  cd /etc/asterisk/
+ 1863  ls -lah
+ 1864  vim sip.conf 
+ 1865  vim extensions.conf
+ 1866  exit
+ 1867  rasterisk -vvvvgci
+ 1868  ping 129.13.85.210
+ 1869  rasterisk -vvvvgci
+ 1870  ping 129.13.85.210
+ 1871  rasterisk -vvvvgci
+ 1872  vim /etc/asterisk/sip.conf 
+ 1873  rasterisk -vvvvgci
+ 1874  ping 129.13.85.210
+ 1875  rasterisk -vvvvgci
+ 1876  exit
+ 1877  vim /etc/asterisk/extensions.co
+ 1878  vim /etc/asterisk/extensions.conf
+ 1879  vim /etc/asterisk/pbx/ivrinput.conf 
+ 1880  rasterisk -vvvvgci
+ 1881  vim /etc/asterisk/extensions.conf
+ 1882  rasterisk -vvvvgci
+ 1883  exit
+ 1884  clear
+ 1885  ll
+ 1886  cd /home/delphini/
+ 1887  ll
+ 1888  cd /var/www/
+ 1889  ll
+ 1890  mv AstStatsCDR /tmp/
+ 1891  ll
+ 1892  mv /home/delphini/AstStatsCDR /var/www/
+ 1893  ll
+ 1894  chwon -R root:root AstStatsCDR/
+ 1895  chown -R root:root AstStatsCDR/
+ 1896  ll
+ 1897  cat index.html 
+ 1898  clear
+ 1899  ll
+ 1900  apt-get install phpmyadmin
+ 1901  clear
+ 1902  ll
+ 1903  cd AstStatsCDR/
+ 1904  ll
+ 1905  cd lib/
+ 1906  ll
+ 1907  cp -a /tmp/AstStatsCDR/lib/defines.php /var/www/AstStatsCDR/lib/defines.php 
+ 1908  vim defines.php
+ 1909  cd ..
+ 1910  ll
+ 1911  cd AstStatsCDR/
+ 1912  ll
+ 1913  cat info.txt 
+ 1914  mysql -u root -p
+ 1915  ln -s /var/spool/asterisk/monitor monitor
+ 1916  ls
+ 1917  ls -l
+ 1918  vim cdr.php 
+ 1919  vim call-log.php 
+ 1920  rasterisk -cgivvv
+ 1921  vim /etc/asterisk/extensions.conf
+ 1922  rasterisk -vvvvgci
+ 1923  history > delphini.txt
